@@ -17,16 +17,27 @@ header {
   justify-content: space-around;
   height: 12.22vh;
 }
+@media (max-width: 508px) {
+  header {
+    flex-direction: column;
+    height: 15vh;
+  }
+}
 header .BoxLogo {
   align-items: center;
   display: flex;
 }
 header .BoxLogo img {
-  width: 6.5vw;
+  width: 5vw;
 }
-@media (max: 800px) {
+@media (max-width: 508px) {
   header .BoxLogo img {
-    width: 9wv;
+    width: 15vw;
+  }
+}
+@media (max-width: 508px) {
+  header .BoxLogo h1 {
+    font-size: 5vw;
   }
 }
 header ul {
@@ -42,13 +53,31 @@ header ul {
   align-items: center;
   justify-content: space-evenly;
   padding: 45px;
-  height: 39.06vh;
+  height: 80vh;
+}
+@media (max-width: 507px) {
+  .container1 {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    height: 80vh;
+  }
+}
+@media (max-width: 507px) {
+  .container1 img {
+    width: 50vw;
+  }
 }
 .container1 p {
   color: black;
   width: 30.5vw;
   height: 27.46vh;
   font-size: 1.4vw;
+}
+@media (max-width: 507px) {
+  .container1 p {
+    width: 100%;
+    font-size: 4vw;
+  }
 }
 
 .container2 {
@@ -57,14 +86,32 @@ header ul {
   align-items: center;
   justify-content: space-evenly;
   padding: 45px;
+  height: 80vh;
+}
+@media (max-width: 507px) {
+  .container2 {
+    height: 80vh;
+    flex-direction: column;
+  }
 }
 .container2 p {
   width: 30.5vw;
   height: 27.46vh;
   font-size: 1.4vw;
 }
+@media (max-width: 507px) {
+  .container2 p {
+    width: 60.5vw;
+    font-size: 4vw;
+  }
+}
 .container2 img {
-  width: 600px;
+  width: 30.92vw;
+}
+@media (max-width: 507px) {
+  .container2 img {
+    width: 70vw;
+  }
 }
 
 .container3 {
@@ -73,7 +120,22 @@ header ul {
   align-items: center;
   justify-content: space-evenly;
   padding: 45px;
-  height: 45vh;
+  height: 60vh;
+}
+@media (max-width: 507px) {
+  .container3 {
+    flex-direction: column-reverse;
+    height: 80vh;
+    padding: 0px;
+  }
+}
+.container3 img {
+  width: 13vw;
+}
+@media (max-width: 507px) {
+  .container3 img {
+    width: 25vw;
+  }
 }
 .container3 p {
   width: 30.5vw;
@@ -89,13 +151,31 @@ footer {
   height: 14.8vh;
   padding-right: 10vh;
 }
+@media (max-width: 507px) {
+  footer {
+    flex-direction: column;
+    height: 20vh;
+    border: solid 2px black;
+    padding-right: 0vh;
+  }
+}
 footer .boxOne {
   display: flex;
   justify-content: space-around;
-  width: 10vw;
+  width: 13vw;
+}
+@media (max-width: 507px) {
+  footer .boxOne {
+    width: 30vw;
+  }
 }
 footer .boxOne img {
-  width: 50px;
+  width: 2.66vw;
+}
+@media (max-width: 507px) {
+  footer .boxOne img {
+    width: 5vw;
+  }
 }
 footer .boxTwo {
   display: flex;
@@ -103,4 +183,13 @@ footer .boxTwo {
   align-items: center;
   font-size: 1.1vw;
   width: 30vw;
+}
+@media (max-width: 507px) {
+  footer .boxTwo {
+    width: 70vw;
+    font-size: 1.6vw;
+  }
+}
+footer .boxThree img {
+  width: 3.66vw;
 }/*# sourceMappingURL=style.css.map */

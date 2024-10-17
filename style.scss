@@ -17,19 +17,26 @@ header {
   align-items: center;
   justify-content: space-around;
   height: 12.22vh;
-  .BoxLogo{
+  @media (max-width: 508px) {
+    flex-direction: column;
+    height: 15vh;
+  }
+  .BoxLogo {
     align-items: center;
     display: flex;
-    @media(max:800px){
+    img {
+      width: 5vw;
+      @media (max-width: 508px) {
+        width: 15vw;
+      }
     }
-    img{
-      width: 6.5vw;
-      @media(max:800px){
-        width: 9wv;
+    h1{
+      @media (max-width: 508px) {
+        font-size: 5vw;
       }
     }
   }
-  ul{
+  ul {
     width: 41.66vw;
     display: flex;
     justify-content: space-between;
@@ -42,13 +49,27 @@ header {
   align-items: center;
   justify-content: space-evenly;
   padding: 45px;
-  height: 39.06vh;
+  height: 80vh;
+  @media (max-width: 507px) {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    height: 80vh;
+  }
 
+  @media (max-width: 507px) {
+    img {
+      width: 50vw;
+    }
+  }
   p {
     color: black;
     width: 30.5vw;
     height: 27.46vh;
     font-size: 1.4vw;
+    @media (max-width: 507px) {
+      width: 100%;
+      font-size: 4vw;
+    }
   }
 }
 
@@ -58,14 +79,26 @@ header {
   align-items: center;
   justify-content: space-evenly;
   padding: 45px;
+  height: 80vh;
+  @media (max-width: 507px) {
+    height: 80vh;
+    flex-direction: column;
+  }
 
   p {
     width: 30.5vw;
     height: 27.46vh;
     font-size: 1.4vw;
+    @media (max-width: 507px) {
+      width: 60.5vw;
+      font-size: 4vw;
+    }
   }
   img {
-    width: 600px;
+    width: 30.92vw;
+    @media (max-width: 507px) {
+      width: 70vw;
+    }
   }
 }
 
@@ -75,7 +108,18 @@ header {
   align-items: center;
   justify-content: space-evenly;
   padding: 45px;
-  height: 45vh;
+  height: 60vh;
+  @media (max-width: 507px) {
+    flex-direction: column-reverse;
+    height: 80vh;
+    padding: 0px;
+  }
+  img {
+    width: 13vw;
+    @media (max-width: 507px){
+      width: 25vw;
+    }
+  }
   p {
     width: 30.5vw;
     height: 27.46vh;
@@ -89,21 +133,42 @@ footer {
   align-items: center;
   height: 14.8vh;
   padding-right: 10vh;
-
+  @media (max-width: 507px) {
+    flex-direction: column;
+    height: 20vh;
+    border: solid 2px black;
+    padding-right: 0vh;
+  }
   .boxOne {
     display: flex;
     justify-content: space-around;
-    width: 10vw;
+    width: 13vw;
+    @media (max-width: 507px) {
+      width: 30vw;
+    }
     img {
-      width: 50px;
+      width: 2.66vw;
+      @media (max-width: 507px) {
+        width: 5vw;
+      }
     }
   }
 
   .boxTwo {
+  
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.1vw;
     width: 30vw;
+    @media (max-width: 507px) {
+      width: 70vw;
+      font-size: 1.6vw;
+    }
+  }
+  .boxThree {
+    img {
+      width: 3.66vw;
+    }
   }
 }
